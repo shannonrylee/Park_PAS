@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/shannonrylee/Park_PAS/issues"
   },
-  "homepage": "https://github.com/shannonrylee/Park_PAS#readme"
+  "homepage": "https://github.com/shannonrylee/Park_PAS#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
