@@ -1,10 +1,10 @@
 const { Schema } = require('mongoose')
 
 const TimeSlots = new Schema(
-    {
-        seat: { type: String, required: true}
-    },
-    { timestamp: true}
+  {
+    times_slot: { type: Array, required: true },
+    seat: { type: Array, required: true }
+  },
+  { timestamp: true }
 )
 module.exports = TimeSlots
-
