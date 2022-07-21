@@ -65,7 +65,7 @@ const createTimeSlots = async () => {
 }
 
 const run = async () => {
-  const rides = await createRides()
+  await createRides()
   await createTimeSlots()
   db.close()
 }
