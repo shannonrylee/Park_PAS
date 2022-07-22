@@ -10,6 +10,12 @@ app.use(express.json())
 
 app.use('/', routes)
 
+app.use(express.static(`${__dirname}/client/build`))
+
+app.get('/*', (req, res) => {
+  res.sendFile(`${__dirname}/client/build/index.html`)
+})
+
 db.on(
   'error',
   console.error.bind(console, 'Park PAS MongoDB connection error:')
