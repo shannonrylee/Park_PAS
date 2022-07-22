@@ -44,9 +44,23 @@ const createTimeSlot = async (req, res) => {
   }
 }
 
+const deleteRide = async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Ride.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Ride deleted')
+    }
+    throw new Error('Ride not found')
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   getRides,
   getTimeSlots,
   createRide,
-  createTimeSlot
+  createTimeSlot,
+  deleteRide
 }

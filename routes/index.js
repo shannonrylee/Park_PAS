@@ -12,4 +12,6 @@ router.post('/create-ride', controllers.createRide)
 
 router.post('/create-timeslot', controllers.createTimeSlot)
 
+router.delete('/ride/:id', controllers.deleteRide)
+
 module.exports = router

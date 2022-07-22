@@ -5,9 +5,9 @@ body {
   font-family: -a, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: #8c8b8b;
+  background-color: #78a5d5ce;
+  display: center;
 }
-
 
 .grid {
   display: grid;
@@ -19,9 +19,10 @@ body {
 .card {
   border-radius: 4px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  color: rgb(46, 110, 135);
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  background-color: #424242;
+  background-color: #e4d6d6;
 }
